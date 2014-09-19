@@ -39,6 +39,7 @@ public final class Lex {
 	
 	/**
 	 * Sets the server, unless the server isn't null
+	 * @param the server you wish to use.
 	 */
 	public void setServer(Server server) {
 		if (Lex.server != null) {
