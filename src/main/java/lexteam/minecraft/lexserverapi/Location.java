@@ -24,40 +24,44 @@
  */
 package lexteam.minecraft.lexserverapi;
 
-import java.util.logging.Logger;
-
 /**
- * The interface that is the brains of the Server.
+ * Introducing a 3-dimensional position in a world
  * @author Jamie Mansfield (https://github.com/lexware)
  */
-public interface Server {
-	/**
-	 * Name of Minecraft Server Software (eg. CanaryMod, Glowstone)
-	 * @return the name of the Minecraft server software in use.
-	 */
-	public String getName();
-	
-	/**
-	 * Version of Minecraft Server Software (eg. 1.2.5)
-	 * @return the version of the Minecraft server software in use.
-	 */
-	public String getVersion();
-	
-	/**
-	 * Version of the LexServerAPI (eg. 1.3.8)
-	 * @return the version of the current LexServerAPI.
-	 */
-	public String getAPIVersion();
-	
-	/**
-     * Current logger
-     * @return the logger associated with this server
+public interface Location {
+    /**
+     * The x position.
+     * @return the x position.
      */
-    public Logger getLogger();
+    public int getX();
     
     /**
-     * Set the current logger
-     * @param log The Logger you wish to set.
+     * The y position.
+     * @return the y position
      */
-    public void setLogger(Logger log);
+    public int getY();
+    
+    /**
+     * The z position.
+     * @return the z position
+     */
+    public int getZ();
+    
+    /**
+     * Set the x position.
+     * @param x The x position
+     */
+    public void setX(int x);
+    
+    /**
+     * Set the y position.
+     * @param y The y position
+     */
+    public void setY(int y);
+    
+    /**
+     * Set the z position.
+     * @param z The z position
+     */
+    public void setZ(int z);
 }

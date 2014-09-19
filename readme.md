@@ -1,4 +1,4 @@
-LexServerAPI [![Build Status](https://travis-ci.org/LexMinecraft/LexServerAPI.svg)](https://travis-ci.org/LexMinecraft/LexServerAPI)
+LexServerAPI
 =======================
 
 ### What is it?

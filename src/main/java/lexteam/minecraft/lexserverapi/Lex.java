@@ -24,6 +24,10 @@
  */
 package lexteam.minecraft.lexserverapi;
 
+/**
+ * The class to use to set and get the Server instance.
+ * @author Jamie Mansfield (https://github.com/lexware)
+ */
 public final class Lex {
 	private static Server server = null;
 	
@@ -39,7 +43,7 @@ public final class Lex {
 	
 	/**
 	 * Sets the server, unless the server isn't null
-	 * @param the server you wish to use.
+	 * @param server The server you wish to use.
 	 */
 	public void setServer(Server server) {
 		if (Lex.server != null) {

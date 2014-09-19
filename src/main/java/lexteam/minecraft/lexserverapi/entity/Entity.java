@@ -22,42 +22,24 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package lexteam.minecraft.lexserverapi;
+package lexteam.minecraft.lexserverapi.entity;
 
-import java.util.logging.Logger;
+import lexteam.minecraft.lexserverapi.Location;
 
 /**
- * The interface that is the brains of the Server.
+ * The interface that is the base for all entities.
  * @author Jamie Mansfield (https://github.com/lexware)
  */
-public interface Server {
-	/**
-	 * Name of Minecraft Server Software (eg. CanaryMod, Glowstone)
-	 * @return the name of the Minecraft server software in use.
-	 */
-	public String getName();
-	
-	/**
-	 * Version of Minecraft Server Software (eg. 1.2.5)
-	 * @return the version of the Minecraft server software in use.
-	 */
-	public String getVersion();
-	
-	/**
-	 * Version of the LexServerAPI (eg. 1.3.8)
-	 * @return the version of the current LexServerAPI.
-	 */
-	public String getAPIVersion();
-	
-	/**
-     * Current logger
-     * @return the logger associated with this server
+public interface Entity {
+    /**
+     * The current location.
+     * @return the current location.
      */
-    public Logger getLogger();
+    public Location getLocation();
     
     /**
-     * Set the current logger
-     * @param log The Logger you wish to set.
+     * Set the current location.
+     * @param loc The current location.
      */
-    public void setLogger(Logger log);
+    public void setLocation(Location loc);
 }
