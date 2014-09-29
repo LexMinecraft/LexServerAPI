@@ -24,16 +24,32 @@
  */
 package lexteam.minecraft.lexserverapi.entity;
 
-import lexteam.minecraft.lexserverapi.Location;
-
 /**
  * The player class.
  * @author Jamie Mansfield (https://github.com/lexware)
  */
-public class Player implements Entity {
+public interface Player extends Entity {
+    /**
+     * Gets the players username
+     * @return the player's username
+     */
+    public String getName();
 
-    public Location getLocation() { return null; }
-
-    public void setLocation(Location loc) {}
-
+    /**
+     * Gets the player's display name.
+     * @return the player's display name
+     */
+    public String getDisplayName();
+    
+    /**
+     * Sets the player's display name.
+     * @param displayName
+     */
+    public void setDisplayName(String displayName);
+    
+    /**
+     * Checks if the player is an OP.
+     * @return true, if the player is an OP, false if the player is not an OP
+     */
+    public boolean isOP();
 }

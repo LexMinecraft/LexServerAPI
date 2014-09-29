@@ -50,6 +50,6 @@ public final class Lex {
             throw new UnsupportedOperationException("The server was already set!");
         }
 		Lex.server = server;
-		server.getLogger().info("This server if running the server software, " + server.getName() + " " + server.getVersion() + " with LexServerAPI version " + server.getAPIVersion());
+		server.getLogger().info("This server is running the server software, " + server.getName() + " " + server.getVersion() + " with LexServerAPI version " + server.getAPIVersion());
 	}
 }
